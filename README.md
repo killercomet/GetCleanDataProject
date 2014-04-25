@@ -21,7 +21,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 #####1. Requirements: 
 
-    1.1 The previously specified dataset must be unzipped and placed in a folder   called "UCI HAR Dataset" in the same directory as the script. 
+    1.1 The source dataset must be unzipped and placed in a folder called "UCI HAR Dataset" in the same directory as the script. 
     1.2 Required files (all contained in the "UCI HAR Dataset" directory:
         -features.txt
         -activity_labels.txt
@@ -34,7 +34,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ####2. Scripts task: 
 
-    The script will take the data included in the aforementioned files, will aggregate them into only one object and then it will dump it into a single file. The steps required to perform this task are: 
+    The script will take the data included in the aforementioned files, it will aggregate them into only one object and then it will dump the object into a single file. 
+    
+    The steps required to perform this task are: 
+    
     -Read the feature names from disk
     -Read X_test.txt, y_test.txt and subject_test.txt and combine them by columns into a single object. 
     -Read Y_train.txt, y_test.txt and subject_train.txt and combine them by columns into a single object. 
