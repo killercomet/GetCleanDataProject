@@ -1,0 +1,64 @@
+###Main variables. 
+* subject -> encodes the subject for which the measures where taken 
+* activity_description -> a label corresponding to the activity that was being performed when the measures where taken 
+* activity -> encode the activity in a more computer-readable form. 
+###Feature variables. 
+Feature variables encode the mean and standard deviation of a certain group of measures taken for the corresponding subject and activity. Fields that contain "mean" encode means and those that encode standard deviations have "std" in their name.  
+
+* t_body_acc_mean_x
+* t_body_acc_mean_y
+* t_body_acc_mean_z
+* t_body_acc_std_x
+* t_body_acc_std_y
+* t_body_acc_std_z
+* t_gravity_acc_mean_x
+* t_gravity_acc_mean_y
+* t_gravity_acc_mean_z
+* t_gravity_acc_std_x
+* t_gravity_acc_std_y
+* t_gravity_acc_std_z
+* t_body_acc_jerk_mean_x
+* t_body_acc_jerk_mean_y
+* t_body_acc_jerk_mean_z
+* t_body_acc_jerk_std_x
+* t_body_acc_jerk_std_y
+* t_body_acc_jerk_std_z
+* t_body_gyro_mean_x
+* t_body_gyro_mean_y
+* t_body_gyro_mean_z
+* t_body_gyro_std_x
+* t_body_gyro_std_y
+* t_body_gyro_std_z
+* t_body_gyro_jerk_mean_x
+* t_body_gyro_jerk_mean_y
+* t_body_gyro_jerk_mean_z
+* t_body_gyro_jerk_std_x
+* t_body_gyro_jerk_std_y
+* t_body_gyro_jerk_std_z
+* t_body_acc_mag_mean
+* t_body_acc_mag_std
+* t_gravity_acc_mag_mean
+* t_gravity_acc_mag_std
+* t_body_acc_jerk_mag_mean
+* t_body_acc_jerk_mag_std
+* t_body_gyro_mag_mean
+* t_body_gyro_mag_std
+* t_body_gyro_jerk_mag_mean
+* t_body_gyro_jerk_mag_std
+* f_body_acc_mean_x
+* f_body_acc_mean_y
+* f_body_acc_mean_z
+* f_body_acc_std_x
+* f_body_acc_std_y
+* f_body_acc_std_z
+* f_body_acc_jerk_mean_x
+* f_body_acc_jerk_mean_y
+* f_body_acc_jerk_mean_z
+* f_body_acc_jerk_std_x
+* f_body_acc_jerk_std_y
+* f_body_acc_jerk_std_z
+* f_body_gyro_mean_x
+* f_body_gyro_mean_y
+* f_body_gyro_mean_z
+* f_body_gyro_std_x
+* f_body_gyro_std_y
