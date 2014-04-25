@@ -7,8 +7,6 @@
 #
 
 
-
-
 ####################################
 #   Read features from disk:
 ####################################
@@ -76,7 +74,9 @@ newDataset <- newDataset[, subsetFeatures]
 subsetFeatures <- gsub("[()]", "", subsetFeatures)
 subsetFeatures <- gsub("([A-Z])", "_\\1", subsetFeatures)
 subsetFeatures <- gsub("-", "_", subsetFeatures)
+subsetFeatures <- gsub("__", "_", subsetFeatures)
 subsetFeatures <- tolower(subsetFeatures)
+
 
 #Assign the new feature names to our dataset. 
 names(newDataset) <- subsetFeatures
@@ -101,6 +101,12 @@ names(activityLabels) <- c("activity", "activity_description")
 
 #Merge the datasets to obtain an activity description for each row
 reducedDataset <- merge(reducedDataset, activityLabels, by.x="activity", by.y="activity", all = FALSE)
+
+#Reorder the columns and place subject and activity at the begining.
+col_idx <- grep("activity_description", names(reducedDataset))
+reducedDataset <- reducedDataset[, c(col_idx, (1:ncol(reducedDataset))[-col_idx])]
+col_idx <- grep("subject", names(reducedDataset))
+reducedDataset <- reducedDataset[, c(col_idx, (1:ncol(reducedDataset))[-col_idx])]
 
 ####################################################
 #       Write the obtained dataset to disk
