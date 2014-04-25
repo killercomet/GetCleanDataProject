@@ -1,8 +1,11 @@
-###Main variables. 
+###Main variables.
+
 * subject -> encodes the subject for which the measures where taken 
 * activity_description -> a label corresponding to the activity that was being performed when the measures where taken 
 * activity -> encode the activity in a more computer-readable form. 
+
 ###Feature variables. 
+
 Feature variables encode the mean and standard deviation of a certain group of measures taken for the corresponding subject and activity. Fields that contain "mean" encode means and those that encode standard deviations have "std" in their name.  
 
 * t_body_acc_mean_x
